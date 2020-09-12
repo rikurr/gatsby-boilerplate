@@ -2,7 +2,7 @@
 import React from 'react'
 import { PageProps, Link, graphql } from 'gatsby'
 
-import Layout from '../components/layout'
+import { Layout } from '../components/layout'
 import SEO from '../components/seo'
 
 type DataProps = {
@@ -25,7 +25,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       run <em>tsc --init</em> to create a <em>.tsconfig</em> file.
     </p>
     <p>
-      You're currently on the page "{path}" which was built on{' '}
+      You're currently on the page '{path}' which was built on{' '}
       {data.site.buildTime}.
     </p>
     <p>
@@ -44,7 +44,7 @@ export default UsingTypescript
 export const query = graphql`
   {
     site {
-      buildTime(formatString: "YYYY-MM-DD hh:mm a z")
+      buildTime(formatString: 'YYYY-MM-DD hh:mm a z')
     }
   }
 `
