@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import styled from '../styles/theme'
+import styled from '../../utils/styles/theme'
 
 type Props = {
   siteTitle?: string

@@ -1,4 +1,5 @@
 import { css } from '@emotion/core'
+import { breakpoints } from './theme'
 
 // html5doctor.com Reset Stylesheet v1.6.1
 // Last Updated: 2010-09-17
@@ -602,7 +603,7 @@ export const GlobalStyles = css`
     text-decoration: none;
     color: #fff;
   }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: ${breakpoints.m}) {
     html {
       font-size: 100%;
     }

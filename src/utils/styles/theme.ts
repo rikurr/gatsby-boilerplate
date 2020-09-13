@@ -1,5 +1,19 @@
 import styled, { CreateStyled } from '@emotion/styled'
 
+type BreakPoints = {
+  s: 576
+  m: 768
+  l: 992
+  xl: 1200
+}
+
+export const breakpoints: BreakPoints = {
+  s: 576,
+  m: 768,
+  l: 992,
+  xl: 1200,
+}
+
 export const theme = {
   color: {
     primary: '#178B8D',
@@ -14,8 +28,8 @@ export const theme = {
   textColor: {
     primary: '#333',
     secondary: '#aaa',
-    sub: "#fff",
-    linkColor: '#777'
+    sub: '#fff',
+    linkColor: '#777',
   },
   layout: {
     width: 960,
