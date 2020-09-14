@@ -1,38 +1,36 @@
 import styled, { CreateStyled } from '@emotion/styled'
 
-type BreakPoints = {
-  s: 576
-  m: 768
-  l: 992
-  xl: 1200
-}
-
-export const breakpoints: BreakPoints = {
-  s: 576,
-  m: 768,
-  l: 992,
-  xl: 1200,
-}
-
 export const theme = {
-  color: {
-    primary: '#178B8D',
-    secondary: '#FBAA0B',
-    sub: '#729994',
+  breakpoints: {
+    s: 576,
+    m: 768,
+    l: 992,
+    xl: 1200,
   },
-  backGroundColor: {
-    primary: '#fff',
-    secondary: '#efefef',
-    dark: '#091622',
-  },
-  textColor: {
-    primary: '#333',
-    secondary: '#aaa',
-    sub: '#fff',
-    linkColor: '#777',
-  },
-  layout: {
-    width: 960,
+  palette: {
+    primary: {
+      light: '#7986cb',
+      main: '#3f51b5',
+      dark: '#303f9f',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '#ff4081',
+      main: '#f50057',
+      dark: '#c51162',
+      contrastText: '#fff',
+    },
+    bgColor: {
+      primary: '#fff',
+      secondary: '#efefef',
+      dark: '#091622',
+    },
+    txtColor: {
+      primary: '#333',
+      secondary: '#aaa',
+      sub: '#fff',
+      linkColor: '#777',
+    },
   },
   FONT: {
     XXXLARGE: 3.2,
@@ -45,27 +43,39 @@ export const theme = {
     XSMALL: 1.0,
     TINY: 0.8,
   },
-} as const
+}
 
 type Theme = {
-  color: {
-    primary: string
-    sub: string
-    secondary: string
+  breakpoints: {
+    s: number
+    m: number
+    l: number
+    xl: number
   }
-  backGroundColor: {
-    primary: string
-    secondary: string
-    dark: string
-  }
-  textColor: {
-    primary: string
-    secondary: string
-    sub: string
-    linkColor: string
-  }
-  layout: {
-    width: number
+  palette: {
+    primary: {
+      light: string
+      main: string
+      dark: string
+      contrastText: string
+    }
+    secondary: {
+      light: string
+      main: string
+      dark: string
+      contrastText: string
+    }
+    bgColor: {
+      primary: string
+      secondary: string
+      dark: string
+    }
+    txtColor: {
+      primary: string
+      secondary: string
+      sub: string
+      linkColor: string
+    }
   }
   FONT: {
     XXXLARGE: number

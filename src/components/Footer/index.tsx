@@ -14,8 +14,8 @@ export const Footer: React.FC = () => {
 }
 
 const FooterWrap = styled.footer`
-  background: ${p => p.theme.backGroundColor.dark};
-  color: ${p => p.theme.textColor.sub};
+  background: ${p => p.theme.palette.primary.dark};
+  color: ${p => p.theme.palette.primary.contrastText};
 `
 
 const FooterInner = styled.div`

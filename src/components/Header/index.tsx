@@ -17,7 +17,8 @@ export const Header: React.FC<Props> = ({ siteTitle }) => (
 )
 
 const HeaderWrap = styled.header`
-  background: ${p => p.theme.color.primary};
+  background: ${p => p.theme.palette.primary.main};
+  color: ${p => p.theme.palette.primary.contrastText}
 `
 
 const HeaderInner = styled.div`
